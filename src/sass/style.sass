@@ -138,6 +138,7 @@ nav
   font-size: 11px
   font-weight: 300
   text-transform: uppercase
+  text-align: center
   z-index: 2
   &_white
     background-color: #fff
@@ -330,3 +331,89 @@ nav
 			li 
 				&:before
 					background: url('../icons/red.png') center (center / cover) no-repeat
+.world
+  position: relative
+  min-height: 717px
+  padding: 49px 0
+  background: url('../img/background/bottom_bg.png') center (center / cover) no-repeat
+  &_link
+    position: absolute
+    left: 50%
+    bottom: 49px
+    transform: translateX(-50%)
+    color: #1fbad6
+    font-size: 15px
+    line-height: 68px
+    text-transform: uppercase
+    &:hover
+      text-decoration: none
+      color: $second-color
+.footer
+  padding: 14px 23px 39px 23px
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: none
+  &_divider
+    width: 299px
+    height: 4px
+    background-color: #1fbad6
+    margin: 0 auto
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 32px
+  &_wrapper>div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+  &_social
+    display: flex
+    justify-content: space-between
+    width: 160px
+    &_item  
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 4px
+      width: 32px
+      height: 32px
+      background-color: #070716
+      border-radius: 100%
+      span
+        color: #ffffff
+  &_links
+    width: 390px
+    margin: 0 auto
+    &_main
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a
+        color: #070716
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+    &_sub
+      display: flex
+      justify-content: space-between
+      margin-top: 15px
+      a
+        color: #999999
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+    &_lang
+      display: block
+      margin: 0 auto
+      margin-top: 19px
+      text-align: center
+      color: #1fbad6
+      font-size: 11px
+      font-weight: 400
+      text-transform: uppercase
+      &:hover
+        color: $second-color             
+
